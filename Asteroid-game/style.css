@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#banner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+#canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #080a18;
+}
+.div1 {
+  color: #4070f4;
+  position: absolute;
+  left: 40%;
+  bottom: 8%;
+}
+.div2 {
+  position: absolute;
+  color: #4070f4;
+  top: 15%;
+  right: 15%;
+}
+.div3 {
+  position: absolute;
+  top: 5%;
+  right: 50%;
+  color: #4070f4;
+}
+.asteroid1 {
+  height: 100px;
+  width: 100px;
+
+  animation: rotation 15s infinite linear;
+}
+.asteroid2 {
+  height: 100px;
+  width: 100px;
+  animation: rotation 15s infinite linear;
+}
+.asteroid3 {
+  width: 100px;
+  height: 100px;
+  animation: rotation 15s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
